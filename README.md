@@ -1,4 +1,3 @@
-# project_1
 # Danh sách thành viên
 Họ Tên|Lớp|Email
 -|-|-
