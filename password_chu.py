@@ -1,11 +1,12 @@
 import pickle
 import streamlit as st
-import pandas as pd
-import numpy as np
+from pass import pass_hs
+from pass import pass_gv
+
 st.title('KẾT QUẢ HỌC TẬP LỚP LÝ 4')
 option = st.selectbox('Bạn là?', ('Học sinh', 'Giáo viên'))
-df = pd.read_excel('DS_10Ly4 - Copy.xlsx')
-dfs = pd.read_excel('passgv.xlsx')
+df = pass_hs()
+dfs = pass_gv()
 if option == 'Giáo viên':
     x = st.text_input("Nhập mật khẩu", type="password")
     if st.button('Enter'):
