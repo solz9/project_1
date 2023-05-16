@@ -3,7 +3,6 @@ import numpy as np
 import cv2
 import pandas as pd
 from deta import Deta
-import database as db
 import login
 import face_recognition
 from encoding import find_encode_list, get_all_names, detabase
