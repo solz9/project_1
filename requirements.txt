@@ -1,4 +1,5 @@
 opencv-python
 numpy
-face-recognition
 dlib-bin
+face-recognition
+
