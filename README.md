@@ -5,7 +5,7 @@ Dương Huệ Mẫn|10CA2|solomon131006@gmail.com
 
 # Thông tin project
 ## Đề tài: Hệ thống nhận dạng gương mặt
-## Các thư viện sử dụng: `OpenCV, deepface`
+## Các thư viện sử dụng: `OpenCV, face_recognition, pandas, numpy, streamlit, deta, `
 
 ## Các chức năng chính & kế hoạch thực hiện
 
