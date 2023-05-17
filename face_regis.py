@@ -4,8 +4,6 @@ import pandas as pd
 import numpy as np
 import face_recognition
 from deta import Deta
-from encoding import find_encode_list, get_all_names
-
 
 hs = pd.read_excel('DS_10Ly4 - Copy.xlsx')
 gv = pd.read_excel('passgv.xlsx')
@@ -14,6 +12,25 @@ name = hs['Họ và tên'].values.tolist()
 name = [name[i].lower() for i in range(len(name))]
 hs['họ và tên'] = name
 
+def get_all_names():
+    items = data.fetch().items
+    names = [item["key"] for item in items]
+    if len(names) > 0:
+        return names
+    else:
+        return []
+    
+# LIST CHỨA FACE_ENCODING CỦA NHỮNG GƯƠNG MẶT ĐÃ ĐĂNG KÝ
+def find_encode_list():
+    encode_list = []
+    names = get_all_names()
+    if len(names) > 0:
+        for i in range(len(names)):
+            name_and_encode = data.get(names[i])
+            encode_list.append(name_and_encode['pic'])
+            return encode_list
+    else:
+        return None
 regis_name = get_all_names()
 
 encode_list = find_encode_list()
