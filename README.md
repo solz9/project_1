@@ -18,3 +18,4 @@ Quay clip demo|Dương Huệ Mẫn|17/5/2023
 - Đăng nhập bằng gương mặt hoặc mật khẩu
 - Hủy đăng ký gương mặt
 ## Clip Demo: https://youtu.be/yL4dNLl4Q6c
+## Link: https://solz9-project-1-face-login-vd2gex.streamlit.app/
