@@ -44,4 +44,3 @@ if st.button('Enter'):
                     st.success('Đăng ký gương mặt thành công')
             else:
                 st.warning('Vui lòng chụp lại')
-base.delete('dương bình an')
