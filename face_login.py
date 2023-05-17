@@ -6,6 +6,7 @@ import pandas as pd
 import face_recognition
 from encoding import get_all_names, find_encode_list, detabase
 
+st.info('Bạn có thể hủy đăng ký gương mặt [tại đây](https://solz9-project-1-face-delete-tvwgbm.streamlit.app/)')
 hs = pd.read_excel('DS_10Ly4 - Copy.xlsx')
 gv = pd.read_excel('passgv.xlsx')
 hs = hs.drop(columns=['Họ và tên đệm', 'Tên'])
