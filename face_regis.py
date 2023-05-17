@@ -6,6 +6,13 @@ import face_recognition
 from deta import Deta
 from encoding import get_all_names, detabase, find_encode_list
 
+hs = pd.read_excel('DS_10Ly4 - Copy.xlsx')
+gv = pd.read_excel('passgv.xlsx')
+hs = hs.drop(columns=['Họ và tên đệm', 'Tên'])
+name = hs['Họ và tên'].values.tolist()
+name = [name[i].lower() for i in range(len(name))]
+hs['họ và tên'] = name
+
 base = detabase()
 regis_name = get_all_names()
 encode_list = find_encode_list()
