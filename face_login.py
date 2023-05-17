@@ -41,7 +41,7 @@ if button:
         cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
         input_face_frame = face_recognition.face_locations(cv2_img)
         if len(input_face_frame) < 1:
-            st.warning("Vui lòng chụp lại ảnh hoặc [đăng nhập bằng mật khẩu](http://localhost:8504/)")
+            st.warning("Vui lòng chụp lại ảnh hoặc [đăng nhập bằng mật khẩu](https://solz9-project-1-password-login-x3pltx.streamlit.app/)")
         else:
             input_face_encode = face_recognition.face_encodings(cv2_img, input_face_frame)[0]
             input_name = face_match(input_face_encode)
@@ -60,7 +60,7 @@ if button:
                             # Display an interactive table
                 st.table(df1)
             else:
-                st.warning("Vui lòng chụp lại ảnh hoặc [đăng nhập bằng mật khẩu](http://localhost:8504/)")
+                st.warning("Vui lòng chụp lại ảnh hoặc [đăng nhập bằng mật khẩu](https://solz9-project-1-password-login-x3pltx.streamlit.app/)")
         
 
 
