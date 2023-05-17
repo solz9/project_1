@@ -52,10 +52,10 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 df1 = hs[hs['họ và tên'] == y]
 if st.button('Enter'):
     identical = [i for i in range(len(regis_name)) if y == regis_name[i]]
-    if len(identical) > 0:
-        st.error('Gương mặt này đã được đăng ký')
-    elif df1['Password'].values != x:
+    if df1['Password'].values != x:
         st.warning('Bạn đã nhập sai mật khẩu hoặc họ và tên, vui lòng nhập lại')
+    elif len(identical) > 0:
+        st.error('Gương mặt này đã được đăng ký')
     else:
         if uploaded_file:
             bytes_data = uploaded_file.getvalue()
