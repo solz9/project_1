@@ -4,7 +4,7 @@ from deta import Deta
 import cv2
 import pandas as pd
 import face_recognition
-from encoding import get_all_names, find_encode_list, detabase
+from encoding import get_all_names, find_encode_list
 
 hs = pd.read_excel('DS_10Ly4 - Copy.xlsx')
 gv = pd.read_excel('passgv.xlsx')
@@ -14,7 +14,9 @@ name = [name[i].lower() for i in range(len(name))]
 hs['họ và tên'] = name
 
 # KẾT NỐI VỚI DATABASE'
-base = detabase()
+DETA_KEY = st.secrets["DETA_KEY"]
+deta = Deta(DETA_KEY) 
+base = deta.Base("face_reg_project")
 
 # TẠO RA LIST CHỨA NAME NHỮNG AI ĐÃ ĐĂNG KÝ GƯƠNG MẶT
 names = get_all_names()
