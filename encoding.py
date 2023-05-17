@@ -2,7 +2,7 @@ import streamlit as st
 from deta import Deta
 
 def detabase():
-    DETA_KEY = "c0qy5dgedq2_7aSU1pPYRdDoNvwmqdwwVUDZLUGz3mpU"
+    DETA_KEY = st.secrets["DETA_KEY"]
     deta = Deta(DETA_KEY) 
     return deta.Base("face_reg_project")
 base = detabase()
