@@ -22,3 +22,4 @@ with st.form('Info'):
             st.warning('Bạn chưa đăng ký gương mặt, vui lòng đăng ký [tại đây](http://localhost:8506/)')
         else:
             base.delete(y)
+            st.success('Hủy đăng ký gương mặt thành công, vui lòng đăng ký lại [tại đây](https://solz9-project-1-face-regis-1f193f.streamlit.app/))
