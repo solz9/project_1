@@ -4,7 +4,7 @@ import cv2
 import pandas as pd
 from deta import Deta
 import login
-import face_recognition.api as face_recognition
+import face_recognition_models as face_recognition
 from encoding import find_encode_list, get_all_names, detabase
 # from face_regis import face_input_regis
 
