@@ -8,7 +8,7 @@ from encoding import find_encode_list, get_all_names
 
 DETA_KEY = st.secrets["DETA_KEY"]
 deta = Deta(DETA_KEY) 
-deta.Base("face_reg_project")
+base = deta.Base("face_reg_project")
 
 hs = pd.read_excel('DS_10Ly4 - Copy.xlsx')
 gv = pd.read_excel('passgv.xlsx')
@@ -17,8 +17,7 @@ name = hs['Họ và tên'].values.tolist()
 name = [name[i].lower() for i in range(len(name))]
 hs['họ và tên'] = name
 
-items = base.fetch().items
-regis_name = [item["key"] for item in items]
+regis_name = get_all_names()
 
 encode_list = find_encode_list()
 
