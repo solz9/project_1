@@ -7,7 +7,7 @@ from deta import Deta
 from encoding import find_encode_list, get_all_names
 
 
-DETA_KEY = "c0qy5dgedq2_7aSU1pPYRdDoNvwmqdwwVUDZLUGz3mpU"
+DETA_KEY = st.secrets["DETA_KEY"]
 deta = Deta(DETA_KEY) 
 base = deta.Base("face_reg_project")
 
