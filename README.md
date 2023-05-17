@@ -8,7 +8,7 @@ Dương Huệ Mẫn|10CA2|solomon131006@gmail.com
 ## Các thư viện sử dụng: `OpenCV, face_recognition, pandas, numpy, streamlit, deta `
 ## Kế hoạch thực hiện
 
-Chức năng|Người thực hiện|Ngày hoàn thành dự kiến
+Kế hoạch|Người thực hiện|Ngày hoàn thành dự kiến
 -|-|-
 Đăng kí project|Dương Huệ Mẫn|30/04/2023
 Hoàn thành project|Dương Huệ Mẫn|17/5/2023
