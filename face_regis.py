@@ -38,12 +38,16 @@ if st.button('Enter'):
             bytes_data = uploaded_file.getvalue()
             cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
             faceframe = face_recognition.face_locations(cv2_img)
-            if len(faceframe) > 0:                 
+            if len(faceframe) > 0 and encode_list != None:                 
                 img_encode = face_recognition.face_encodings(cv2_img, faceframe)[0]
                 match_regis = face_recognition.compare_faces(encode_list, img_encode)
                 match_index_regis = [i for i in range(len(match_regis)) if match_regis[i] == True]
                 if len(match_index_regis) > 0:
                     base.put({'key':y, 'pic': img_encode.tolist()})
                     st.success('Đăng ký gương mặt thành công')
-            else:
+            elif len(faceframe) == 0:
                 st.warning('Vui lòng chụp lại')
+            else:
+                base.put({'key':y, 'pic': img_encode.tolist()})
+                st.success('Đăng ký gương mặt thành công')
+                
