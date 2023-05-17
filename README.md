@@ -11,7 +11,8 @@ Dương Huệ Mẫn|10CA2|solomon131006@gmail.com
 Kế hoạch|Người thực hiện|Ngày hoàn thành dự kiến
 -|-|-
 Đăng kí project|Dương Huệ Mẫn|30/04/2023
-Hoàn thành project|Dương Huệ Mẫn|17/5/2023
+Deploy lên Streamlit|Dương Huệ Mẫn|16/5/2023
+Quay clip demo|Dương Huệ Mẫn|17/5/2023
 ## Các chức năng chính:
 - Đăng ký gương mặt & lưu trữ trên database
 - Đăng nhập bằng gương mặt hoặc mật khẩu
