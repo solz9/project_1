@@ -13,13 +13,13 @@ def get_all_names():
     if len(names) > 0:
         return names
     else:
-        return []
+        return None
 
 # LIST CHỨA FACE_ENCODING CỦA NHỮNG GƯƠNG MẶT ĐÃ ĐĂNG KÝ
 def find_encode_list():
     encode_list = []
     names = get_all_names()
-    if len(names) > 0:
+    if len(names) != None:
         for i in range(len(names)):
             name_and_encode = base.get(names[i])
             encode_list.append(name_and_encode['pic'])
