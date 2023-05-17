@@ -10,8 +10,11 @@ base = detabase()
 def get_all_names():
     items = base.fetch().items
     names = [item["key"] for item in items]
-    return names
-
+    if len(names) > 0:
+        return names
+    else:
+        return []
+    
 # LIST CHỨA FACE_ENCODING CỦA NHỮNG GƯƠNG MẶT ĐÃ ĐĂNG KÝ
 def find_encode_list():
     encode_list = []
