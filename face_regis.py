@@ -46,5 +46,5 @@ if st.button('Enter'):
             else:
                 img_encode = face_recognition.face_encodings(cv2_img, faceframe)[0]
                 base.put({'key':y, 'pic': img_encode.tolist()})
-                st.success('Đăng ký gương mặt thành công')
+                st.success('Đăng ký gương mặt thành công, bạn có thể hủy đăng ký gương mặt [tại đây](https://solz9-project-1-face-delete-tvwgbm.streamlit.app/)')
                 
