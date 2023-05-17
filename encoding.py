@@ -19,7 +19,7 @@ def get_all_names():
 def find_encode_list():
     encode_list = []
     names = get_all_names()
-    if len(names) != None:
+    if names != None:
         for i in range(len(names)):
             name_and_encode = base.get(names[i])
             encode_list.append(name_and_encode['pic'])
