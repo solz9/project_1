@@ -17,3 +17,4 @@ Quay clip demo|Dương Huệ Mẫn|17/5/2023
 - Đăng ký gương mặt & lưu trữ trên database
 - Đăng nhập bằng gương mặt hoặc mật khẩu
 - Hủy đăng ký gương mặt
+## Clip Demo: https://youtu.be/vvVedS_8s7o
