@@ -12,4 +12,4 @@ Dương Huệ Mẫn|10CA2|solomon131006@gmail.com
 Chức năng|Người thực hiện|Ngày hoàn thành dự kiến
 -|-|-
 Đăng kí project|Dương Huệ Mẫn|30/04/2023
-Làm project|Dương Huệ Mẫn|12/5/2023
+Hoàn thành project|Dương Huệ Mẫn|17/5/2023
