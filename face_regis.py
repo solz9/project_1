@@ -48,6 +48,7 @@ if st.button('Enter'):
             elif len(faceframe) == 0:
                 st.warning('Vui lòng chụp lại')
             else:
+                img_encode = face_recognition.face_encodings(cv2_img, faceframe)[0]
                 base.put({'key':y, 'pic': img_encode.tolist()})
                 st.success('Đăng ký gương mặt thành công')
                 
