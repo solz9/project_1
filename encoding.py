@@ -1,13 +1,14 @@
 import streamlit as st
 from deta import Deta
 
-
-DETA_KEY = "c0qy5dgedq2_7aSU1pPYRdDoNvwmqdwwVUDZLUGz3mpU"
-deta = Deta(DETA_KEY) 
-data = deta.Base("face_reg_project")
+def detabase():
+    DETA_KEY = "c0qy5dgedq2_7aSU1pPYRdDoNvwmqdwwVUDZLUGz3mpU"
+    deta = Deta(DETA_KEY) 
+    return deta.Base("face_reg_project")
 
 
 def get_all_names():
+    data = detabase()
     items = data.fetch().items
     names = [item["key"] for item in items]
     if len(names) > 0:
@@ -17,6 +18,7 @@ def get_all_names():
     
 # LIST CHỨA FACE_ENCODING CỦA NHỮNG GƯƠNG MẶT ĐÃ ĐĂNG KÝ
 def find_encode_list():
+    data = detabase()
     encode_list = []
     names = get_all_names()
     if len(names) > 0:
