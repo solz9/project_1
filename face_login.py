@@ -60,7 +60,7 @@ if button:
                             # Display an interactive table
                 st.table(df1)
             else:
-                st.warning("Vui lòng chụp lại ảnh hoặc [đăng nhập bằng mật khẩu](https://solz9-project-1-password-login-x3pltx.streamlit.app/)")
+                st.warning("Vui lòng chụp lại ảnh hoặc nếu chưa đăng ký gương mặt, vui lòng đăng ký [tại đây](https://solz9-project-1-face-regis-1f193f.streamlit.app/) hoặc [đăng nhập bằng mật khẩu](https://solz9-project-1-password-login-x3pltx.streamlit.app/)")
         
 
 
