@@ -7,8 +7,6 @@ from deta import Deta
 from encoding import find_encode_list, get_all_names
 
 
-base = detabase()
-
 hs = pd.read_excel('DS_10Ly4 - Copy.xlsx')
 gv = pd.read_excel('passgv.xlsx')
 hs = hs.drop(columns=['Họ và tên đệm', 'Tên'])
