@@ -17,7 +17,7 @@ hs['họ và tên'] = name
 # KẾT NỐI VỚI DATABASE'
 DETA_KEY = st.secrets["DETA_KEY"]
 deta = Deta(DETA_KEY) 
-deta.Base("face_reg_project")
+base = deta.Base("face_reg_project")
 
 # TẠO RA LIST CHỨA NAME NHỮNG AI ĐÃ ĐĂNG KÝ GƯƠNG MẶT
 names = get_all_names()
