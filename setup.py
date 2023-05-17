@@ -2,13 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
-
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
-
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
-
 requirements = [
     'face_recognition_models>=0.3.0',
     'Click>=6.0',
