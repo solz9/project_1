@@ -1,14 +1,8 @@
 import streamlit as st
 from deta import Deta
+from face_regis import detabase
 
-def detabase():
-    DETA_KEY = st.secrets["DETA_KEY"]
-    deta = Deta(DETA_KEY) 
-    return deta.Base("face_reg_project")
-
-DETA_KEY = "c0qy5dgedq2_7aSU1pPYRdDoNvwmqdwwVUDZLUGz3mpU"
-deta = Deta(DETA_KEY) 
-base = deta.Base("face_reg_project")
+base = detabase()
 
 def get_all_names():
     items = base.fetch().items
