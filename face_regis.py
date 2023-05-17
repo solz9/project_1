@@ -17,7 +17,9 @@ name = hs['Họ và tên'].values.tolist()
 name = [name[i].lower() for i in range(len(name))]
 hs['họ và tên'] = name
 
-regis_name = get_all_names()
+items = base.fetch().items
+regis_name = [item["key"] for item in items]
+
 encode_list = find_encode_list()
 
 # def face_input_regis():
