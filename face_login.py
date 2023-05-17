@@ -4,8 +4,7 @@ from deta import Deta
 import cv2
 import pandas as pd
 import face_recognition
-from encoding import find_encode_list, get_all_names
-# from face_regis import face_input_regis
+from face_regis import get_all_names, find_encode_list
 
 hs = pd.read_excel('DS_10Ly4 - Copy.xlsx')
 gv = pd.read_excel('passgv.xlsx')
