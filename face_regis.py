@@ -7,11 +7,6 @@ from deta import Deta
 from encoding import detabase, find_encode_list, get_all_names
 
 
-def detabase():
-    DETA_KEY = st.secrets["DETA_KEY"]
-    deta = Deta(DETA_KEY) 
-    return deta.Base("face_reg_project")
-
 base = detabase()
 
 hs = pd.read_excel('DS_10Ly4 - Copy.xlsx')
