@@ -30,8 +30,6 @@ def face_match(face_input_encode):
             return None
     else:
         return None
-# def face_input_login():
-st.info('Nếu chưa đăng ký gương mặt, vui lòng đăng ký [tại đây](https://solz9-project-1-face-regis-1f193f.streamlit.app/)')
 uploaded_file = st.camera_input("Chụp ảnh")
 st.set_option('deprecation.showfileUploaderEncoding', False)
 button = st.button("Submit")
