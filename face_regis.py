@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import face_recognition
 from deta import Deta
-from encoding import detabase, find_encode_list, get_all_names
+from encoding import find_encode_list, get_all_names
 
 
 base = detabase()
