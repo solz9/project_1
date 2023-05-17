@@ -2,7 +2,7 @@ import streamlit as st
 import cv2
 import pandas as pd
 import numpy as np
-import face_recognition_models as face_recognition
+import face_recognition\
 from deta import Deta
 from encoding import find_encode_list, get_all_names, detabase
 
