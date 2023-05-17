@@ -4,9 +4,11 @@ import pandas as pd
 import numpy as np
 import face_recognition
 from deta import Deta
-from encoding import find_encode_list, get_all_names, detabase
+from encoding import find_encode_list, get_all_names
 
-base = detabase()
+DETA_KEY = st.secrets["DETA_KEY"]
+deta = Deta(DETA_KEY) 
+deta.Base("face_reg_project")
 
 hs = pd.read_excel('DS_10Ly4 - Copy.xlsx')
 gv = pd.read_excel('passgv.xlsx')
