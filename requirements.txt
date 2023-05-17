@@ -1,7 +1,7 @@
 opencv-python-headless
 numpy==1.24.3
 pip==23.1.2
-face_recognition_models
+face_recognition @ git+https://github.com/thetoby9944/face_recognition
 deta
 openpyxl
 
