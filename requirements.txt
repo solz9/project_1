@@ -4,6 +4,3 @@ pip==23.1.2
 face_recognition @ git+https://github.com/thetoby9944/face_recognition
 deta==1.1.0
 openpyxl
-
-
-
