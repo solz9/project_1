@@ -19,7 +19,7 @@ hs['họ và tên'] = name
 
 regis_name = get_all_names()
 encode_list = find_encode_list()
-print(encode_list)
+
 # def face_input_regis():
 y = st.text_input('Nhập họ và tên').lower()
 x = st.text_input("Nhập mật khẩu", type="password")
