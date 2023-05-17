@@ -1,4 +1,4 @@
-opencv
+opencv-python
 numpy==1.24.3
 pip==23.1.2
 face_recognition_models
